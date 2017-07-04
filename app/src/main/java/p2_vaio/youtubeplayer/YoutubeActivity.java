@@ -15,7 +15,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    static final String GOOGLE_API_KEY = "AIzaSyC2z7Y7zJNspyl10EmRTTAcpVBm32layOA";
+    static final String GOOGLE_API_KEY = "***KEY***";
     static final String YOUTUBE_VIDEO_ID ="2NjtWgM4Rt8";
     static final String YOUTUBE_PLAYLIST = "PL9bw4S5ePsEH3tOw-4lH5Ehv8fn89RyZx";
     private static final String TAG = "YoutubeActivity";
@@ -63,7 +63,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
             youTubeInitializationResult.getErrorDialog(this,REQUEST_CODE).show();
         }else{
             String errorMessage = String.format("There was an error initialising the player (%1$s)",youTubeInitializationResult.toString());
-            Toast.makeText(YoutubeActivity.this,errorMessage,Toast.LENGTH_LONG);
+            Toast.makeText(YoutubeActivity.this,errorMessage,Toast.LENGTH_LONG).show();
         }
     }
 
